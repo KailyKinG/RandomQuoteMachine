@@ -1,0 +1,157 @@
+.quoteBox {
+  width: 550px;
+  padding: 40px 50px;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: solid 1px blue; */
+}
+
+blockquote {
+  width: 100%;
+  margin-left: 0;
+  margin-top: 0;
+  /* border: solid 1px blue; */
+}
+
+blockquote p {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  white-space: pre-wrap;
+  transition: color 2s ease-in-out;
+}
+
+blockquote p .icono {
+  margin-bottom: -2px;
+  transition: color 2s ease-in-out;
+}
+
+cite {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  text-align: right;
+  margin-top: 30px;
+  transition: color 2s ease-in-out;
+  /* border: solid 1px blue; */
+}
+
+.bottons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: solid 1px blue; */
+}
+
+.social {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* border: solid 1px green; */
+}
+
+.botonSocial {
+  position: relative;
+  /* border: solid 1px blue; */
+}
+
+.botonSocial:first-of-type {
+  margin-right: 10px;
+}
+
+.botonSocial .icono {
+  font-size: 43px;
+  transition: color 2s ease-in-out;
+}
+
+.icono {
+  font-size: 2rem;
+}
+
+.boton {
+  position: relative;
+  border: none;
+  height: 40px;
+  font-size: 0.8rem;
+  padding: 0px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color, 2s ease-in-out;
+  /* border: solid 1px blue; */
+}
+
+.backgroundHover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: none;
+}
+.backgroundHoverBoton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 43px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: none;
+}
+
+.botonSocial:hover .backgroundHover {
+  display: block;
+}
+
+.boton:hover .backgroundHoverBoton {
+  display: block;
+}
+
+/* blockquote {
+  border: solid 1px blue;
+} */
+
+.visible {
+  animation-name: aparecer;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.visibleNo {
+  /* position: relative;
+  left: -1030px; */
+  animation-name: desAparecer;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes desAparecer {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

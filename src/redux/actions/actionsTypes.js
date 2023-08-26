@@ -1,0 +1,2 @@
+export const FIRST_MESSAGE = "FIRST_MESSAGE";
+export const RANDOM_MESSAGE = "RANDOM_MESSAGE";
