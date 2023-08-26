@@ -1,4 +1,8 @@
-# React + Vite
+# Random Quote Machine
+
+## Proyecto es parte de la certificacion de librerias de la interfax
+
+### Hecho con framework Vite+React
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
